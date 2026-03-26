@@ -50,6 +50,7 @@ img{ max-width:100%; display:block; }
   background: rgba(255,255,255,.86);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
+  padding: 0 20px;
 }
 .header-inner{
   display:flex;
@@ -62,7 +63,13 @@ img{ max-width:100%; display:block; }
   display:flex;
   align-items:center;
   gap:10px;
-  min-width: 220px;
+  min-width: 0;
+}
+.brand-text{ min-width: 0; }
+.brand-title, .brand-subtitle{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .brand-mark{
   border-radius:10px;
@@ -539,4 +546,12 @@ dialog::backdrop{ background: rgba(28,26,23,.55); }
   .hero{ padding-top: 34px; }
   .card{ grid-column: span 12; }
   .contact-card{ grid-column: span 12; }
+}
+
+@media (max-width: 980px){
+  .site-header{ padding: 0 18px; }
+}
+@media (max-width: 640px){
+  .site-header{ padding: 0 16px; }
+  .header-inner{ padding: 12px 0; }
 }
