@@ -1,0 +1,18 @@
+{
+  "name": "Masserie Brienza",
+  "short_name": "Masserie Brienza",
+  "description": "Caseificio di Michele Brienza ad Avigliano (PZ). 100% latte lucano - basso contenuto di lattosio.",
+  "lang": "it-IT",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fffdfb",
+  "theme_color": "#fbf7f2",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
