@@ -49,6 +49,8 @@
         "@type": "DairyStore",
         "name": "Masserie Brienza - di Michele Brienza",
         "slogan": "100% Latte lucano - Basso contenuto di lattosio",
+        "vatID": "IT01732260763",
+        "taxID": "BRNMHL85R25G942E",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Via Salinas",
@@ -67,7 +69,8 @@
           "ricotta",
           "stracciatella",
           "scamorza",
-          "latte lucano"
+          "latte lucano",
+          "ATECO 015"
         ]
       }
     </script>
@@ -92,14 +95,46 @@
           <a href="#contatti">Contattaci</a>
         </nav>
 
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Apri menu"
+          aria-controls="mobileNavPanel"
+          aria-expanded="false"
+          data-menu-open
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div class="header-cta">
           <a class="btn btn-soft" href="#contatti">Prenota</a>
-          <a class="btn btn-primary" href="https://wa.me/393288748103" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn-whatsapp" href="https://wa.me/393288748103" target="_blank" rel="noopener noreferrer">
             WhatsApp
           </a>
         </div>
       </div>
     </header>
+
+    <div class="mobile-nav-overlay" data-menu-overlay hidden>
+      <aside class="mobile-nav-panel" id="mobileNavPanel" aria-label="Menu mobile">
+        <div class="mobile-nav-head">
+          <img class="brand-mark" src="assets/favicon.jpeg" width="26" height="26" alt="" />
+          <strong>Masserie Brienza</strong>
+          <button class="menu-close" type="button" aria-label="Chiudi menu" data-menu-close>Chiudi</button>
+        </div>
+        <nav class="mobile-nav-links">
+          <a href="#prodotti" data-menu-link>Prodotti</a>
+          <a href="#azienda" data-menu-link>L’azienda</a>
+          <a href="#contatti" data-menu-link>Contattaci</a>
+        </nav>
+        <div class="mobile-nav-cta">
+          <a class="btn btn-soft" href="#contatti" data-menu-link>Prenota</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/393288748103" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </aside>
+    </div>
 
     <main id="contenuto">
       <section class="hero" id="top">
@@ -127,14 +162,14 @@
 
           <div class="hero-visual" aria-hidden="true">
             <img
-              src="assets/milking.jpg"
+              src="assets/favicon.jpeg"
               alt=""
               width="820"
               height="640"
               loading="eager"
               decoding="async"
             />
-            <div class="hero-float hero-float-1">
+            <!-- <div class="hero-float hero-float-1">
               <img src="assets/products/mozzarella.svg" alt="" width="44" height="44" />
               <span>Mozzarella</span>
             </div>
@@ -145,7 +180,7 @@
             <div class="hero-float hero-float-3">
               <img src="assets/products/stracciatella.svg" alt="" width="44" height="44" />
               <span>Stracciatella</span>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -167,7 +202,7 @@
                   alt="Mozzarella"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -183,7 +218,7 @@
                   alt="Treccine"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -199,7 +234,7 @@
                   alt="Nodini"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -215,7 +250,7 @@
                   alt="Treccia all'acqua"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -231,7 +266,7 @@
                   alt="Toma"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -247,7 +282,7 @@
                   alt="Ricotta"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -263,7 +298,7 @@
                   alt="Stracciatella"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -279,7 +314,7 @@
                   alt="Ricotta infornata"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -295,7 +330,7 @@
                   alt="Scamorza"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -311,7 +346,7 @@
                   alt="Provolone"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -327,7 +362,7 @@
                   alt="Formaggio vaccino"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -343,7 +378,7 @@
                   alt="Pecorino"
                   loading="lazy"
                   decoding="async"
-                  data-fallback="assets/missing.svg"
+                  data-fallback="assets/milk%20glass.jpg"
                 />
               </button>
               <div class="card-body">
@@ -422,8 +457,7 @@
                     </svg>
                   </span>
                   <span class="wa-text">
-                    <span class="wa-title">Aggiungici su WhatsApp</span>
-                    <span class="wa-number">+39 328 874 81 03</span>
+                    <span class="wa-title">328 874 81 03</span>
                   </span>
                 </a>
 
@@ -437,8 +471,7 @@
                     </svg>
                   </span>
                   <span class="wa-text">
-                    <span class="wa-title">Aggiungici su WhatsApp</span>
-                    <span class="wa-number">+39 345 244 12 53</span>
+                    <span class="wa-title">345 244 12 53</span>
                   </span>
                 </a>
               </div>
@@ -460,8 +493,11 @@
               <h3>Dati azienda</h3>
               <ul class="details">
                 <li><span>Ragione sociale</span><strong>Brienza Michele</strong></li>
-                <li><span>Partita IVA</span><strong>01732260763</strong></li>
+                <li><span>Partita IVA (UE)</span><strong>IT01732260763</strong></li>
                 <li><span>Codice Fiscale</span><strong>BRNMHL85R25G942E</strong></li>
+                <li>
+                  Coltivazioni agricole associate all’allevamento di animali (attività mista)
+                </li>
                 <li><span>Email</span><strong>—</strong></li>
                 <li>
                   <span>LinkedIn</span>
@@ -477,16 +513,8 @@
 
           <div class="map-card">
             <div class="map-copy">
-              <h3>Vieni a trovarci</h3>
+              <h3>Dove siamo</h3>
               <p class="muted">Via Salinas, 85021 Avigliano PZ, Italia</p>
-              <a
-                class="btn btn-soft"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.google.com/maps/search/?api=1&query=Via%20Salinas%2C%2085021%20Avigliano%20PZ%2C%20Italia"
-              >
-                Apri su Google Maps
-              </a>
             </div>
             <div class="map-visual" aria-hidden="true">
               <iframe
