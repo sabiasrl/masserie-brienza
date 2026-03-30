@@ -394,6 +394,10 @@ h2{
 }
 .mini-title{ margin: 0 0 4px; font-weight: 860; }
 .mini p{ margin:0; }
+.address-block{
+  margin: 0;
+  line-height: 1.55;
+}
 
 .farm-visual{
   border-radius: var(--radius2);
@@ -405,8 +409,13 @@ h2{
 }
 .farm-photos{
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+}
+@media (min-width: 720px){
+  .farm-photos{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .farm-photos img{
   border-radius: calc(var(--radius2) - 14px);
