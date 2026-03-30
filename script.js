@@ -5,7 +5,20 @@
   const menuOverlay = document.querySelector("[data-menu-overlay]");
   const openMenuBtn = document.querySelector("[data-menu-open]");
   const closeMenuBtn = document.querySelector("[data-menu-close]");
-  const menuLinks = document.querySelectorAll("[data-menu-link]");
+
+  const scrollToHash = (hash) => {
+    if (!hash || hash === "#") return;
+    if (hash === "#top") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      history.replaceState(null, "", hash);
+      return;
+    }
+    const id = decodeURIComponent(hash.slice(1));
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    history.replaceState(null, "", hash);
+  };
 
   const openMenu = () => {
     if (!menuOverlay || !openMenuBtn) return;
@@ -23,7 +36,23 @@
 
   openMenuBtn?.addEventListener("click", openMenu);
   closeMenuBtn?.addEventListener("click", closeMenu);
-  menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+  document.querySelectorAll('.site-header a[href^="#"], [data-menu-overlay] a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+      if (!href || href === "#") return;
+      e.preventDefault();
+      const fromMobileMenu = Boolean(link.closest("[data-menu-overlay]"));
+      if (fromMobileMenu) closeMenu();
+      const go = () => scrollToHash(href);
+      if (fromMobileMenu) {
+        requestAnimationFrame(() => requestAnimationFrame(go));
+      } else {
+        go();
+      }
+    });
+  });
+
   menuOverlay?.addEventListener("click", (e) => {
     if (e.target === menuOverlay) closeMenu();
   });
