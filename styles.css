@@ -561,8 +561,27 @@ h2{
   border-bottom: 1px solid rgba(28,26,23,.08);
 }
 .details span{ color: var(--muted); font-weight: 700; }
-.details strong{ font-weight: 860; text-align:right; max-width: 62%; }
-.details a{ text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.details strong{
+  font-weight: 860;
+  text-align: right;
+  max-width: 62%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.details a{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.details a.social-link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  line-height: 1;
+}
 
 .map-card{
   margin-top: 14px;
