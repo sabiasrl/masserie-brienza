@@ -541,34 +541,23 @@ h2{
   flex: 1 1 auto;
   min-width: 0;
 }
-.btn-vcard-add{
+.cta-row > .btn-soft{
   flex: 0 0 auto;
-  flex-direction: column;
-  gap: 6px;
-  width: min(112px, 30vw);
-  min-width: 92px;
-  padding: 10px 10px;
-  font-size: 10.5px;
-  font-weight: 780;
-  letter-spacing: .02em;
-  line-height: 1.15;
-  text-align: center;
+  align-self: center;
+  gap: 0;
+  padding: 8px;
 }
-.btn-vcard-add .vcard-contact-icon{
+.cta-row > .btn-soft .vcard-contact-icon{
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 0;
   color: inherit;
 }
-.btn-vcard-add .vcard-contact-icon svg{
-  width: 22px;
-  height: 22px;
-}
-.btn-vcard-add .vcard-add-label{
+.cta-row > .btn-soft .vcard-contact-icon svg{
   display: block;
-  max-width: 100%;
-  padding: 0 2px;
+  width: 18px;
+  height: 18px;
 }
 .btn-whatsapp{
   border-color: rgba(18,140,126,.35);
