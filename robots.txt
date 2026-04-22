@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sabiasrl.github.io/masserie-brienza/sitemap.xml
+Sitemap: https://www.masseriabrienzamichele.it/sitemap.xml

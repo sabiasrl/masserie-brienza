@@ -531,6 +531,45 @@ h2{
 }
 .contact-card h3{ margin: 0 0 8px; letter-spacing: -0.2px; }
 .cta-list{ display:flex; flex-direction:column; gap:10px; margin-top: 12px; }
+.cta-row{
+  display:flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 10px;
+}
+.cta-row .cta-wa{
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.btn-vcard-add{
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 6px;
+  width: min(112px, 30vw);
+  min-width: 92px;
+  padding: 10px 10px;
+  font-size: 10.5px;
+  font-weight: 780;
+  letter-spacing: .02em;
+  line-height: 1.15;
+  text-align: center;
+}
+.btn-vcard-add .vcard-contact-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  color: inherit;
+}
+.btn-vcard-add .vcard-contact-icon svg{
+  width: 22px;
+  height: 22px;
+}
+.btn-vcard-add .vcard-add-label{
+  display: block;
+  max-width: 100%;
+  padding: 0 2px;
+}
 .btn-whatsapp{
   border-color: rgba(18,140,126,.35);
   background: linear-gradient(180deg, rgba(37,211,102,.98), rgba(18,140,126,.98));
