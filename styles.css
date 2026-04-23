@@ -534,30 +534,12 @@ h2{
 .cta-row{
   display:flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   gap: 10px;
 }
 .cta-row .cta-wa{
   flex: 1 1 auto;
   min-width: 0;
-}
-.cta-row > .btn-soft{
-  flex: 0 0 auto;
-  align-self: center;
-  gap: 0;
-  padding: 8px;
-}
-.cta-row > .btn-soft .vcard-contact-icon{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  color: inherit;
-}
-.cta-row > .btn-soft .vcard-contact-icon svg{
-  display: block;
-  width: 18px;
-  height: 18px;
 }
 .btn-whatsapp{
   border-color: rgba(18,140,126,.35);
@@ -580,8 +562,34 @@ h2{
   align-items:flex-start;
   line-height:1.05;
 }
+.wa-title-row{
+  display:inline-flex;
+  align-items:center;
+  gap: .45rem;
+}
 .wa-title{ font-weight: 920; }
 .wa-number{ font-weight: 820; opacity: .92; margin-top: 4px; }
+.vcard-inline{
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  overflow: hidden;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  align-self: center;
+}
+.vcard-inline img{
+  width: 100%;
+  height: 100%;
+  display:block;
+  object-fit: cover;
+  image-rendering: auto;
+}
 .checklist{
   margin: 12px 0 0;
   padding-left: 18px;

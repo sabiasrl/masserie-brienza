@@ -1,11 +1,9 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Michele — Masseria Brienza · prodotti caseari
-N:Brienza\;Michele\;\;\;
-ORG:Masseria Brienza Michele\;Prodotti caseari
-TEL;TYPE=WORK,VOICE:+393288748103
+FN:Prodotti caseari · 100% latte lucano · consegna a domicilio
+N:domicilio\;Prodotti caseari · 100% latte lucano · consegna a\;\;\;
+ORG:Prodotti caseari · 100% latte lucano · consegna a domicilio
 EMAIL;TYPE=INTERNET,PREF:brienza416@gmail.com
-EMAIL;TYPE=INTERNET:michele.brienza@pec.basilicatanet.it
 URL:https://www.masseriabrienzamichele.it/
 ADR;TYPE=WORK:;;Via Salinas s.n.c.;Avigliano;PZ;85021;Italy
 LABEL;TYPE=WORK:Via Salinas s.n.c.\, 85021 Avigliano\, (PZ)\, Italy
